@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "ABC Detective Agency Employees";
+    string[] staff = { "Piglet", "Winnie the Pooh", "Gofer", "Roo", "Kessie" };
+    int staffLen = staff.Length;
+    string[] managers = { "Rabbit", "Owl", "Kanga", "Christopher Robin" };
+    int managerLen = managers.Length;
+    string[] detectives = { "Tigger", "Eeore" };
+    int detectiveLen = detectives.Length;
+    var x = 0;
+}
+
+<h2>@ViewBag.Title</h2>
+<hr / style="border: 5px solid seagreen;">
+<img src="~/Content/detective.png" alt="xyz detectives" style="float:right; width:200px; outline:5px solid black; outline-offset:10px;" />
+<h2>XYZ Detective Agency Staff</h2>
+@for (x = 0; x < staffLen; x++)
+{<p>@staff[x]</p>}
+<hr / style="border: 5px solid seagreen;">
+<h2>XYZ Detective Agency Management</h2>
+@for (x = 0; x < managerLen; x++)
+{<p>@managers[x]</p>}
+<hr / style="border: 5px solid seagreen;">
+<h2>XYZ Detective Agency Detectives</h2>
+@for (x = 0; x < detectiveLen; x++)
+{<p>@detectives[x]</p>}
+<hr / style="border: 5px solid seagreen;">
